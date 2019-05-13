@@ -1,0 +1,22 @@
+AccountingBundle\Entity\Rate:
+    type: entity
+    table: null
+    repositoryClass: AccountingBundle\Repository\RateRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        dateInsert:
+            type: date
+        summ:
+            type: float
+        category:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

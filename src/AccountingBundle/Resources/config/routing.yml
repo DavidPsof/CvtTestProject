@@ -1,0 +1,14 @@
+#accounting_homepage:
+#  path:     /
+#  defaults: { _controller: AccountingBundle:Default:index }
+review:
+  path: /rate/review
+  defaults: {_controller: AccountingBundle:rateList:index}
+
+add_rate:
+  path: /rate
+  defaults: {_controller: AccountingBundle:Default:index}
+
+month_rate:
+  path: /rate/month/{date}
+  defaults: {_controller: AccountingBundle:MonthRate:index}
